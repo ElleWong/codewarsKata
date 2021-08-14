@@ -13,8 +13,6 @@ std::string add(const std::string &a, const std::string &b) {
     newA[i] = sum % 10 + '0';
   }
   int i = newA.find_first_not_of('0');
-  std::cout << "i: " << i << " " << newA.substr(0, 1) << "\n";
-  //  return newA[0] == '0' ? newA.substr(1) : newA.substr(0, 1);
   return i >= 0 ? newA.substr(i) : newA.substr(0, 1);
 }
 
